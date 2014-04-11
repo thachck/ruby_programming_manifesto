@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+libdir = File.expand_path("../../lib",__FILE__)
+$LOAD_PATH.unshift(libdir) unless $LOAD_PATH.include?(libdir)
+
+require 'google_stats_retriever'
+p GoogleStatsRetriever.(ARGV[0].to_s)
+
