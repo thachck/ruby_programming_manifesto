@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+if __FILE__ == $0
+  $LOAD_PATH.unshift('lib', 'test')
+  tests = `find ./test -name *_test.rb -print | xargs grep -l "test_helper"`
+  Dir.glob(tests.split("\n")) { |f| puts f; require f }
+end

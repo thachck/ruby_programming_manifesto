@@ -1,4 +1,5 @@
 module GoogleMatchers
+  extend self
 
   def match(html)
     matches(html) || 0
