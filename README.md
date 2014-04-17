@@ -232,32 +232,37 @@ end
   * Is easy to reason about and describe
   * Naturally is protected from breaking the public interface
 
+## Want more examples??
+
+* https://codeclimate.com/github/thatrubylove/fantasyhub/code
+* https://codeclimate.com/github/thatrubylove/shakespeare_analyzer/code
+* https://codeclimate.com/github/thatrubylove/playing_cards/code
+
 
 ## Acknowledgments and Thanks
 
-I would like to say thank you to all the people I have sucked off of like a vampiric zombie since 2007. Some of these were from videos of talks, some were pairing sessions, some were just friends on irc who liked to bang Ruby.
+I would like to say thank you to all the people I have sucked off of like a vampiric zombie since 2007. Some of these were from videos of talks, some were pairing sessions, some were just friends on irc who liked to bang Ruby. This list is alphabetical and in reverse because I don't want anyone in the last positions for any reason except arbitrary sorting... :)
 
-  * James Edward Gray II
-  * Jim Weirich
-  * Avdi Grimm
-  * Ben Orenstien
-  * Zed Shaw
-  * Kent Beck
-  * Uncle Bob
-  * Geoffrey Grosenbach
-  * Daniel Fischer
-  * Jose Valim
-  * Aaron Patterson
-  * Sandi Metz
-  * Corey Haines
-  * Josh Susser
-  * Ryan Bates
-  * Steve Klabnik
-  * Brian Guthrie
-  * Fabio Akita
-  * Rick Olsen
-  * Obie Fernandez
-  * Jessica Kerr
-  * Phil Cohen
-  * Ben Curtis
-  * Gregg Pollack
+* Zed Shaw
+* Uncle Bob
+* Steve Klabnik
+* Sandi Metz
+* Ryan Bates
+* Phil Cohen
+* Obie Fernandez
+* Kent Beck
+* Josh Susser
+* Jose Valim
+* Jim Weirich
+* Jessica Kerr
+* James Edward Gray II
+* Gregg Pollack
+* Geoffrey Grosenbach
+* Fabio Akita
+* Daniel Fischer
+* Corey Haines
+* Brian Guthrie
+* Ben Orenstien
+* Ben Curtis
+* Avdi Grimm
+* Aaron Patterson
