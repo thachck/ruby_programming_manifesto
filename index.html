@@ -81,6 +81,13 @@ $ git checkout gh-pages
     ga('create', 'UA-45878065-2', 'rubylove.io');
     ga('send', 'pageview');
 
+ setTimeout(function() {
+    window.onscroll = function() {
+      window.onscroll = null; // Only track the event once
+      _gaq.push(['_trackEvent', 'scroll', 'read']);
+    }
+  }, 5000);
+
   </script>
   </body>
 </html>
