@@ -13,7 +13,7 @@ This manifesto describes the observations and opinions I have gathered and const
 
 ## Object Design
 
-* All Objects are named for Verbs, not Nouns
+* All Objects are named for Verbal Nouns
 * All Object names are highly descriptive
 * Object design prefers stateless to stateful
   * If you must maintain state, maintain 1 value object
