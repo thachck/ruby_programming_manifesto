@@ -50,7 +50,6 @@ This manifesto describes the observations and opinions I have gathered and const
 * Write value classes
 * Implement the ```:call``` method
 
-This allows you to treat code as data and pass it around. This is a very lispy thing to do, but hey, Ruby is MatzLISP so we can do it. When you start to think of arrays as lists and code structures as lazy pieces od data with behavior, your whole world changes!
 
 ## More Awesome Constraints
 
@@ -229,6 +228,41 @@ protected
 end
 ```
 
+## Homoiconicity
+
+By implementing much of what you see laid out in my manifesto, you end up with Ruby object structures that can be treated as code. You can pass Classes and modules, and their functions around with ease. Ruby is a LISP, or last close enough where it matters. I like to think of it as MatzLISP.
+
+When you tackle your code in a functional manner, and treat your code as data, then you can start putting together powerful constructs.
+
+## Functional Programming VS Object Oriented Programming
+
+OOP was invented to help humans rationalize code by making the code look and feel more like the objects we interact with on a daily basis. It is a philisophical outlook. The promise was we would be able to 'reuse' objects, and 'share' code. Yes we share code today. But we failed horribly at reuse.
+
+Functional Programming is a bit harder to rationalize about, unless you have a math mind. However, the code itself can be much easier to understand than imperative OO code. I will also argue that Functional Programming also delivers on what OO fails at.
+
+In FP, every function is a pure function that takes in data, and does something WITH that data, not TO that data. Each function is a tiny cell that does either one thing, or part of a thing.
+
+These functions are then *composed* into larger functionality. They are very much like LEGGO. They are small, atomic pieces, you put together to build things.
+
+
+## Statelessness and Time Travel
+
+I try to model the code I write after GIT. When you save a file under GIT, it doesn't overwrite the previous file. It writes a diff and from that it can calculate the file changes in both directions. Make another change and commit. Same thing. You now have 3 states you can walk to.
+
+What does that have to do with coding? Cores.
+
+Consider CPU1 is working on function A altering an object called Bob. Bob is actually a memory address that the CPUS share. So CPU1 overwrites what Bob used to be with what he is now.
+
+CPU2 kicks in and is going to use Bob. It will also change Bob. After it does so, CPU1 wants to further change Bob. Except Bob has already been changed and is in a state CPU1 does not know how to deal with.
+
+Now consider instead of CHANGING Bob, we just create a copy with the old values plus the new, changed value. Now when CPU1 tries to get it's pointer of Bob the memory space is the same, and no one messed with it. When CPU2 needs to do something with it's pointer of of Bob it is a different copy.
+
+Notice I didn't say do something TO Bob. It does something WITH a copy of Bob. Now here is the kicker.
+
+When you write code like this, it is like being able to see all time at one in little windows in front of you. Each reference to Bob at a certain moment in time is available to those who are already using that copy of Bob.
+You can go foward in time with Bob, or back in time with Bob. From that you could possibly extrapolate what will happen to bob in the future!
+
+
 ## Immediate Benefits
 
 * Extreme convention over configuration
@@ -239,6 +273,7 @@ end
   * Would not violate Sandi's rulez
   * Is easy to reason about and describe
   * Naturally is protected from breaking the public interface
+
 
 ## Want more examples??
 
