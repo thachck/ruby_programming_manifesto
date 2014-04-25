@@ -44,6 +44,14 @@ This manifesto describes the observations and opinions I have gathered and const
 * Very little inter-object chatter
 
 
+## Homoiconicity
+
+* Write stateless modules
+* Write value classes
+* Implement the ```:call``` method
+
+This allows you to treat code as data and pass it around. This is a very lispy thing to do, but hey, Ruby is MatzLISP so we can do it. When you start to think of arrays as lists and code structures as lazy pieces od data with behavior, your whole world changes!
+
 ## More Awesome Constraints
 
 * Do NOT Use the following or I kill a baby fairy:
