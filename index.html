@@ -14,7 +14,12 @@
     <script type="text/javascript">
         var githubApiUrl = 'https://api.github.com/repos/rubylove/ruby_programming_manifesto/readme';
         var contentContainerId = "#readmeContent";
-
+      setTimeout(function() {
+          window.onscroll = function() {
+            window.onscroll = null; // Only track the event once
+            _gaq.push(['_trackEvent', 'scroll', 'read']);
+          }
+        }, 5000);
         $.ajax({
           url: githubApiUrl,
           dataType: 'jsonp',
