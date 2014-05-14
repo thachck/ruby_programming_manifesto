@@ -1,6 +1,6 @@
 # RUBY (PROGRAMMING) MANIFESTO
 
-This manifesto describes the observations and opinions I have gathered and constructed over the last 6 years of programming in Ruby, and over a total lifetime of programming, so far - a quarter century. Jesus... a quarter of a century.
+This manifesto describes the observations and opinions I have gathered and constructed over the last 8 years of programming in Ruby, and over a total lifetime of programming, so far - a quarter century. Jesus... a quarter of a century.
 
 ## Prefer the Functional side of life
 
